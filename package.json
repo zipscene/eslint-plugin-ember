@@ -1,0 +1,18 @@
+{
+  "name": "eslint-plugin-ember",
+  "version": "1.0.0",
+  "description": "Provides ember rules for eslint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "ember"
+  ],
+  "author": "Douglas Flick <doug.flick@zipscene.com>",
+  "license": "MIT",
+  "peerDependencies": {
+  	"eslint": ">=0.8.0"
+  }
+}
