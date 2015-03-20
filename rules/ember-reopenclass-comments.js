@@ -1,6 +1,6 @@
 /**
 * @author Douglas
-* @fileoverview Add a space before and below extend assignments
+* @fileoverview forces the use of comments above properties within a reopenClass
 **/
 
 module.exports = function(context) {
@@ -18,8 +18,8 @@ module.exports = function(context) {
 		locOfReopens: [ {} ]
 	};
 
-	// Allows for Properties to be added here so that comments
-	// are no longer required
+	// Allows for Properties to be added so that comments
+	// are no longer required for specific properties
 	var globalPropertyList = [];
 
 	if (context.options) {

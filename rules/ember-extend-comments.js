@@ -108,8 +108,8 @@ module.exports = function(context) {
 	var currComment = node.leadingComments;
 	var currProperty = node.loc;
 
+		// Comment should be one line above but not inline
 		if (currComment) {
-
 			if (currProperty.start.line - currComment[currComment.length - 1].loc.end.line !== 1) {
 				return false;
 			}
