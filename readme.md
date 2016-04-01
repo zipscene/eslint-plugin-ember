@@ -1,83 +1,71 @@
 # Ember Plugin for Eslint
-(still in development)
-
-[Github](https://github.com/zipscene/eslint-plugin-ember)
-
-## Description:
 
 Set of Ember rules to lint source code that uses the ember framework
 
-## Rules:
-
-Currently there are four rules which rely on the latest release of eslint ^0.16.1
-
-### To get the plugin:
+## Installation:
 
 ```
-	npm install eslint-plugin-ember
+npm install eslint-plugin-ember --save-dev
 ```
 
-### To install the plugin:
-
-#### Add this to your .eslintrc file
-
+Add this to your .eslintrc file
 
 ```
 {
-    "plugins": [
-        "eslint-plugin-ember"
-    ]
+  "plugins": ["eslint-plugin-ember"]
 }
 ```
 
-### Enforce comments in .extend blocks for properties  (ember-extend-comments)
+## Rules:
 
-ember-extend-comments will only look one depth level into the block and will enforce
-that properties are given comments above.
+Currently there are four rules which rely on eslint ^0.16.1
 
-Takes in two parameters:
-	The status of the rule: 0 - Off, 1 - Warning, 2 - Error
-	An array of names of properties that you don't want to require comments
+##### ember-extend-comments
 
-An example would be:
+Enforce comments in .extend blocks for properties. `ember-extend-comments` will only look one depth level into the block and will enforce that properties are given comments above.
 
-```
-	"ember/ember-extend-comments": [2, ["actions", "classnames"]]
-```
+Parameters:
 
-### Enforce comments in .reopenclass blocks for properties (ember-reopenclass-comments)
-
-ember-reopenclass-comments will only look one depth level into the block and will enforce
-that properties are given comments above.
-
-Takes in two parameters:
-	The status of the rule: 0 - Off, 1 - Warning, 2 - Error
-	An array of names of properties that you don't want to require comments
-
-An example would be:
+- The status of the rule: 0 - Off, 1 - Warning, 2 - Error
+- An array of names of properties that you don't want to require comments
 
 ```
-	"ember/ember-reopenclass-comments": [2, ["_class", "localStorage", "rawResponse"]]
+"ember/ember-extend-comments": [2, ["actions", "classnames"]]
 ```
 
-### Enforce a newline above and below a .extend block (ember-newline-extend)
+##### ember-reopenclass-comments
 
-Takes in one parameter:
-	The status of the rule: 0 - Off, 1 - Warning, 2 - Error
+Enforce comments in .reopenclass blocks for properties. `ember-reopenclass-comments` will only look one depth level into the block and will enforce that properties are given comments above.
 
-An example would be:
+Parameters:
 
-```
-	"ember/ember-newline-extend": 2
-```
-
-### Enforce a newline above and below a .reopenclass block (ember-newline-reopenclass)
-
-Takes in one parameter:
-	The status of the rule: 0 - Off, 1 - Warning, 2 - Error
-
-An example would be:
+- The status of the rule: 0 - Off, 1 - Warning, 2 - Error
+- An array of names of properties that you don't want to require comments
 
 ```
-	"ember/ember-newline-extend": 2
+"ember/ember-reopenclass-comments": [2, ["_class", "localStorage", "rawResponse"]]
+```
+
+##### ember-newline-extend
+
+Enforce a newline above and below a `.extend` block
+
+Parameters:
+
+- The status of the rule: 0 - Off, 1 - Warning, 2 - Error
+
+```
+"ember/ember-newline-extend": 2
+```
+
+##### ember-newline-reopenclass
+
+Enforce a newline above and below a `.reopenclass` block
+
+Parameters:
+
+- The status of the rule: 0 - Off, 1 - Warning, 2 - Error
+
+```
+"ember/ember-newline-extend": 2
 ```

@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ember",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Provides ember rules for eslint",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "eslint",
     "ember"
   ],
-  "author": "Douglas Flick <doug.flick@zipscene.com>",
+  "author": "Zipscene, LLC",
   "license": "MIT",
   "peerDependencies": {
   	"eslint": ">=0.8.0"
